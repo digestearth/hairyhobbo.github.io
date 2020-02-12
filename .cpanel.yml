@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hairyhobbo/public_html/
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R ekko $DEPLOYPATH
+    - /bin/cp -R fp_images $DEPLOYPATH
+    - /bin/cp -R html_files $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
+    - /bin/cp gulpfile.js $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
