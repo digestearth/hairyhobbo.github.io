@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Forestcraft</a>
+      <a class="navbar-brand" href="../#">Forestcraft</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,44 +49,54 @@
   </nav>
 
   <!-- Content Row -->
-  <div class="row">
-    <div class="col-md-4 mb-5 mt-5">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">pic 1</h2>
-          <p class="card-text">temp text</p>
-        </div>
-        <div class="card-footer">
-          <a> notes </a>
-        </div>
-      </div>
-    </div>
-    <!-- /.col-md-4 -->
-    <div class="col-md-4 mb-5 mt-5">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">pic 2</h2>
-          <p class="card-text">temp text</p>
-        </div>
-        <div class="card-footer">
-          <a> notes </a>
-        </div>
-      </div>
-    </div>
-    <!-- /.col-md-4 -->
-    <div class="col-md-4 mb-5 mt-5">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">pic 3</h2>
-          <p class="card-text">temp text</p>
-        </div>
-        <div class="card-footer">
-          <a> notes </a>
-        </div>
-      </div>
-    </div>
-    <!-- /.col-md-4 -->
 
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row mt-4">
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+        </div>
+        <div class="row mt-4">
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+            <a href="./../fp_images/interior/hagens_mainview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="./../fp_images/interior/hagens_mainview.png" class="img-fluid">
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -97,9 +107,18 @@
     <!-- /.container -->
   </footer>
 
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../ekko/ekko-lightbox.min.js"></script>
+
+  <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+      });
+  </script>
 
 
 </body>
