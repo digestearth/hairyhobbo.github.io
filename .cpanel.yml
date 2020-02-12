@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hairyhobbo/public_html/
+    - export DEPLOYPATH=/home4/fclogwor/public_html
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R ekko $DEPLOYPATH
     - /bin/cp -R fp_images $DEPLOYPATH
