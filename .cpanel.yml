@@ -4,7 +4,7 @@ deployment:
     - export DEPLOYPATH=/home4/fclogwor/public_html
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R ekko $DEPLOYPATH
-    - /bin/cp -R fp_images $DEPLOYPATH
+    - /bin/cp -R photos $DEPLOYPATH
     - /bin/cp -R html_files $DEPLOYPATH
     - /bin/cp -R vendor $DEPLOYPATH
     - /bin/cp gulpfile.js $DEPLOYPATH
