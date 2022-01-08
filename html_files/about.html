@@ -16,13 +16,17 @@
   <!-- Custom styles for this template -->
   <link href="../css/small-business.css" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../css/gallery-grid.css" rel="stylesheet"/>
+
 </head>
 
-<body>
+<body style="background-color: grey;">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">Forestcraft</a>
+      <a class="navbar-brand" href="../index.html">Forest Craft</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,18 +44,58 @@
             <a class="nav-link" href="../index.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Contact</a>
+            <a class="nav-link" href="../index.html#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+<div class="container" >
+  <div class="row align-items-center my-5">
+    <div class="col-lg-7">
+      <img style=" background-size: contain; width: 90%; height: auto;"class="img-fluid rounded mb-4 mb-lg-0" src="../photos/homepg/forestcraft_logo.png" alt="">
+    </div>
+    <!-- /.col-lg-8 -->
+    <div class="card text-white bg-secondary my-5 pt-1 pb-3 col-lg-5">
+      <h1 class="font-weight-light">Tim Harris - Contractor</h1>
+      <p>Through a life time of building Tim has yadda yadda yadda...  </p>
+      <!--a class="btn btn-secondary bg-dark" href="../index.html#contact">Get in Contact!</a-->
+    </div>
+    <!-- /.col-md-4 -->
+  </div>
+  <div class="row align-items-center my-5">
+    <div class="card text-white bg-secondary my-5 pt-1 pb-3 col-lg-5">
+      <h1 class="font-weight-light">Forest Craft Logworks Co LLC</h1>
+      <p>Forest Craft came to be in 19XX when Tim decided to
+    </div>
 
+  </div>
+  <h1 class="card text-white bg-secondary my-5 pt-1 pb-1 col-lg-4">Meet the crew:</h1>
+  <div class="row align-items-center my-5">
+    <div class="tz-gallery">
+     <div class="row" id="gallery">
+      <div class="col-sm-6 col-md-4">
+       <a class="lightbox" href="../photos/additions/strausswise_1.jpg">
+        <img alt="strausswise_1.jpg" src="../photos/additions/strausswise_1.jpg"/>
+       </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+       <a class="lightbox" href="../photos/additions/strausswise_2.jpg">
+        <img alt="strausswise_2.jpg" src="../photos/additions/strausswise_2.jpg"/>
+       </a>
+      </div>
+     </div>
+    </div>
+
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    <p class="m-0 text-center text-white">Copyright &copy; Forest Craft Logworks LLC 2019</p>
   </div>
   <!-- /.container -->
 </footer>
@@ -59,6 +103,19 @@
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../ekko/ekko-lightbox.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+</script>
+<script>
+ baguetteBox.run('.tz-gallery');
+</script>
+<script>
+ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+    });
+</script>
 
 </body>
 
