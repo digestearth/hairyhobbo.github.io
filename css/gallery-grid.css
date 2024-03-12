@@ -1,7 +1,9 @@
+
+
 body {
     /*
     background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
-    
+
     background-color= grey;
     min-height: 100vh;
     font: normal 16px sans-serif;
@@ -34,18 +36,32 @@ body {
 }
 
 .tz-gallery {
+    text-decoration: none;
+
     padding: 40px;
 }
 
 .tz-gallery .lightbox img {
     width: 100%;
+    margin-bottom: 0px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.tz-gallery .lightbox figure {
+    text-decoration: none;
+    width: 100%;
     margin-bottom: 30px;
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
+.tz-gallery .lightbox figcaption {
+    text-decoration: none;
+
+}
 
 
-.tz-gallery .lightbox img:hover {
+.tz-gallery .lightbox figure:hover {
+    text-decoration: none;
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
